@@ -24,7 +24,7 @@ namespace MQS.Commands
 
         public List<string> Aliases => new List<string>();
 
-        public List<string> Permissions => new List<string> { "mqs.bleed" };
+        public List<string> Permissions => new List<string> { "ap.bleed" };
 
         public void Execute(IRocketPlayer caller, string[] args)
         {

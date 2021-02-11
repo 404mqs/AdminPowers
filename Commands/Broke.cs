@@ -24,7 +24,7 @@ namespace MQS.Commands
 
         public List<string> Aliases => new List<string>();
 
-        public List<string> Permissions => new List<string> { "mqs.broke" };
+        public List<string> Permissions => new List<string> { "ap.broke" };
 
         public void Execute(IRocketPlayer caller, string[] args)
         {

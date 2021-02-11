@@ -24,7 +24,7 @@ namespace MQS.Commands
 
         public List<string> Aliases => new List<string>();
 
-        public List<string> Permissions => new List<string> { "mqs.gravity" };
+        public List<string> Permissions => new List<string> { "ap.gravity" };
 
         public void Execute(IRocketPlayer caller, string[] args)
         {
