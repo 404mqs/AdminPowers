@@ -34,28 +34,29 @@ namespace MQS.Commands
                 {
                     case 1:
                         var user = UnturnedPlayer.FromName(args[0]);
+                        var name = user.DisplayName;
                         if (user != null)
                         {
                             user.Bleeding = !user.Bleeding;
 
                             if (user.Bleeding == true)
                             {
-                                UnturnedChat.Say(caller, $"{user.DisplayName} is now BLEEDING!");
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("UserBleeding", name), MQSPlugin.Instance.MessageColor);
                             }
 
                             if (user.Bleeding == false)
                             {
-                                UnturnedChat.Say(caller, $"{user.DisplayName} is no longer BLEEDING!");
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("UserNotBleeding", name), MQSPlugin.Instance.MessageColor);
                             }
 
 
                         }
                         else
-                        UnturnedChat.Say(caller, "Sorry, I could not find the player. Try again.", UnityEngine.Color.red, true);
-                     
+                        UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"),  MQSPlugin.Instance.MessageColor);
+                        
                         break;
                     default:
-                        UnturnedChat.Say(caller, "Correct usage: /BLEED [USER]", UnityEngine.Color.red, true);
+                        UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("BleedUsage"),  MQSPlugin.Instance.MessageColor);
                         break;
 
                 }

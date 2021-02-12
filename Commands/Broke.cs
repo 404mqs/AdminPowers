@@ -40,23 +40,23 @@ namespace MQS.Commands
 
                             if (user.Broken == true)
                             {
-                                UnturnedChat.Say(caller, $"{user.DisplayName} has now BROKEN BONES!");
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("UserBroken", user.DisplayName), MQSPlugin.Instance.MessageColor);
                             }
 
                             if (user.Broken == false)
                             {
-                                UnturnedChat.Say(caller, $"{user.DisplayName} Bones are now fixed.");
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("FixedBones", user.DisplayName), MQSPlugin.Instance.MessageColor);
                             }
 
 
 
                         }
                         else
-                            UnturnedChat.Say(caller, "Sorry, I could not find the player. Try again.", UnityEngine.Color.red, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
 
                         break;
                     default:
-                        UnturnedChat.Say(caller, "Correct usage: /BROKE [USER]", UnityEngine.Color.red, true);
+                        UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("BrokeUsage"), MQSPlugin.Instance.MessageColor);
                         break;
 
                 }

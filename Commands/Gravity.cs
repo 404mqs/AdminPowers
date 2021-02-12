@@ -37,7 +37,7 @@ namespace MQS.Commands
                         {
                             var papa1 = float.Parse(args[0]);
                             player.Player.movement.sendPluginGravityMultiplier(papa1);
-                            UnturnedChat.Say($"Your Gravity is now {papa1}. Enjoy!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("AdminGravity", papa1), MQSPlugin.Instance.MessageColor);
 
                         }
 
@@ -52,11 +52,14 @@ namespace MQS.Commands
                         {
                             var papa2 = float.Parse(args[1]);
                             user.Player.movement.sendPluginGravityMultiplier(papa2);
-                            UnturnedChat.Say(caller, $"Player {user.DisplayName} Gravity is now {papa2}.", UnityEngine.Color.cyan, true);
-                            UnturnedChat.Say(user, $"Your Gravity is now {papa2}. Enjoy!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("PlayerGravity", user.DisplayName, papa2), MQSPlugin.Instance.MessageColor);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("PlayerMessageGravity", papa2), MQSPlugin.Instance.MessageColor);
 
 
                         }
+
+                        else
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
 
                         break;
 

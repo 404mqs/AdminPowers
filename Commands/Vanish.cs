@@ -40,30 +40,30 @@ namespace MQS.Commands
 
                             if (user.VanishMode == true)
                             {
-                                UnturnedChat.Say($"{user.DisplayName} has got Vanish from {player.DisplayName}!", UnityEngine.Color.cyan, true);
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("GotVanished", user.DisplayName, player.DisplayName), MQSPlugin.Instance.MessageColor);
                             }
 
                             if (user.VanishMode == false)
                             {
-                                UnturnedChat.Say($"{user.DisplayName} Vanish has been removed.", UnityEngine.Color.cyan, true);
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("NoMoreVanished", user.DisplayName), MQSPlugin.Instance.MessageColor);
 
                             }
 
                         }
                         else
-                            UnturnedChat.Say(caller, "Sorry, I could not find the player. Try again.", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
                         break;
 
                     default:
                         player.VanishMode = !player.VanishMode;
                         if (player.VanishMode == false)
                         {
-                            UnturnedChat.Say(caller, "You are not Vanished anymore.", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("NotVanish"), MQSPlugin.Instance.MessageColor);
                         }
 
                         if (player.VanishMode == true)
                         {
-                            UnturnedChat.Say(caller, "You have Vanish now!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("Vanish"), MQSPlugin.Instance.MessageColor);
                         }
 
 

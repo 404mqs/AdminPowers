@@ -43,17 +43,17 @@ namespace MQS.Commands
                         {
                    
                             user.Player.movement.sendPluginSpeedMultiplier(0);
-                            UnturnedChat.Say(caller, $"Player {user.DisplayName} is now frozen.", UnityEngine.Color.red, true);
-                            UnturnedChat.Say(user, $"You were frozen by {player.DisplayName}.", UnityEngine.Color.red, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("PlayerFrozen", user.DisplayName), MQSPlugin.Instance.MessageColor);
+                            UnturnedChat.Say(user, MQSPlugin.Instance.Translate("FrozenBy", player.DisplayName), MQSPlugin.Instance.MessageColor);
                         }
-                    
+
                         else
-                           
-                           UnturnedChat.Say(caller, "Sorry, I could not find the player. Try again.", UnityEngine.Color.red, true);
+
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
 
                         break;
                         default:
-                        UnturnedChat.Say(caller, "Correct usage: /FREEZE [USER]", UnityEngine.Color.red, true);
+                        UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("FreezeUsage"), MQSPlugin.Instance.MessageColor);
                         break;
 
 

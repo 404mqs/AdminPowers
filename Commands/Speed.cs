@@ -37,7 +37,7 @@ namespace MQS.Commands
                         {
                             var papa1 = float.Parse(args[0]);
                             player.Player.movement.sendPluginSpeedMultiplier(papa1);
-                            UnturnedChat.Say($"Your speed is now {papa1}. Enjoy!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("SpeedMessage", papa1), MQSPlugin.Instance.MessageColor);
 
                         }
 
@@ -52,11 +52,14 @@ namespace MQS.Commands
                         {
                             var papa2 = float.Parse(args[1]);
                             user.Player.movement.sendPluginSpeedMultiplier(papa2);
-                            UnturnedChat.Say(caller, $"Player {user.DisplayName} speed is now {papa2}.", UnityEngine.Color.cyan, true);
-                            UnturnedChat.Say(user, $"Your speed is now {papa2}. Enjoy!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("PlayerSpeed", user.DisplayName, papa2), MQSPlugin.Instance.MessageColor);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("SpeedMessage", papa2), MQSPlugin.Instance.MessageColor);
 
 
                         }
+
+                        else
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
 
                         break;
 

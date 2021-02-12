@@ -37,7 +37,7 @@ namespace MQS.Commands
                         {
                             var papa1 = float.Parse(args[0]);
                             player.Player.movement.sendPluginJumpMultiplier(papa1);
-                            UnturnedChat.Say($"Your Jump Power is now {papa1}. Enjoy!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("JumpPower", papa1), MQSPlugin.Instance.MessageColor);
 
                         }
 
@@ -52,11 +52,16 @@ namespace MQS.Commands
                         {
                             var papa2 = float.Parse(args[1]);
                             user.Player.movement.sendPluginJumpMultiplier(papa2);
-                            UnturnedChat.Say(caller, $"Player {user.DisplayName} Jump Power is now {papa2}.", UnityEngine.Color.cyan, true);
-                            UnturnedChat.Say(user, $"Your Jump Power is now {papa2}. Enjoy!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("PlayerJumpPower", user.DisplayName, papa2), MQSPlugin.Instance.MessageColor);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("JumpPower", papa2), MQSPlugin.Instance.MessageColor);
+
+
 
 
                         }
+
+                        else
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
 
                         break;
 

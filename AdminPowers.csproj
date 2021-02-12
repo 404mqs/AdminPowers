@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\Broke.cs" />
+    <Compile Include="Config.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Commands\Bleed.cs" />
     <Compile Include="Commands\Freeze.cs" />

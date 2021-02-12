@@ -12,3 +12,17 @@ C:\Users\Marcos Mont\Desktop\Nueva carpeta\AdminPowers\obj\Debug\AdminPowers.csp
 C:\Users\Marcos Mont\Desktop\Nueva carpeta\AdminPowers\obj\Debug\AdminPowers.dll
 C:\Users\Marcos Mont\Desktop\Nueva carpeta\AdminPowers\obj\Debug\AdminPowers.pdb
 C:\Users\Marcos Mont\Desktop\Nueva carpeta\AdminPowers\obj\Debug\AdminPowers.csprojAssemblyReference.cache
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\AdminPowers.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\AdminPowers.pdb
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\Assembly-CSharp.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\Rocket.API.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\Rocket.Core.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\Rocket.Unturned.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\UnityEngine.CoreModule.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\UnityEngine.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.csprojAssemblyReference.cache
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.csproj.CopyComplete
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.dll
+C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.pdb

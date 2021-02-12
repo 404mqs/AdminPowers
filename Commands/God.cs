@@ -40,7 +40,7 @@ namespace MQS.Commands
                             
                             if (user.GodMode == true)
                             {
-                                UnturnedChat.Say($"{user.DisplayName} has got GOD from {player.DisplayName}!", UnityEngine.Color.cyan, true);
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("GotGod", user.DisplayName, player.DisplayName), MQSPlugin.Instance.MessageColor);
                                 if (user.Broken == true)
                                 {
                                     user.Broken = !user.Broken;
@@ -48,29 +48,29 @@ namespace MQS.Commands
                             }
                             if (user.GodMode == false)
                             {
-                                UnturnedChat.Say($"{user.DisplayName} GOD has been removed.", UnityEngine.Color.cyan, true);
-                                
+                                UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("PlayerLostGod", user.DisplayName), MQSPlugin.Instance.MessageColor);
+
                             }
 
                         }
                         else
-                            UnturnedChat.Say(caller, "Sorry, I could not find the player. Try again.", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
                         break;
 
                     default:
                         player.GodMode = !player.GodMode;
                         if (player.GodMode == false)
-                        { 
-                        UnturnedChat.Say(caller, "You don't have GOD anymore.", UnityEngine.Color.cyan, true);
+                        {
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("AdminLostGod"), MQSPlugin.Instance.MessageColor);
                         }
 
                         if (player.GodMode == true)
                         {
-                        UnturnedChat.Say(caller, "You have GOD now!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("AdminGotGod"), MQSPlugin.Instance.MessageColor);
 
                         }
 
-                        
+
 
 
                         break;

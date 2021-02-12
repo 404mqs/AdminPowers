@@ -37,17 +37,17 @@ namespace MQS.Commands
                         if (user != null)
                         {
                             user.Heal(100);
-                            UnturnedChat.Say(caller, $"{user.DisplayName} was healed by {player.DisplayName}!", UnityEngine.Color.cyan, true);
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("PlayerHealed", user.DisplayName, player.DisplayName), MQSPlugin.Instance.MessageColor);
                         }
 
                         else
-                            UnturnedChat.Say(caller, "Sorry, I could not find the player. Try again.", UnityEngine.Color.cyan, true);
-                    break;
+                            UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("InvalidPlayer"), MQSPlugin.Instance.MessageColor);
+                        break;
 
                     default:
                         
                         player.Heal(100);
-                        UnturnedChat.Say(caller, "You were healed.", UnityEngine.Color.cyan, true);
+                        UnturnedChat.Say(caller, MQSPlugin.Instance.Translate("Healed"), MQSPlugin.Instance.MessageColor);
                         break;
 
 
