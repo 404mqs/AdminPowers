@@ -26,17 +26,19 @@ namespace MQS
         {
             MQSPlugin.Instance = this;
             MessageColor = UnturnedChat.GetColorFromName(Configuration.Instance.MessageColor, UnityEngine.Color.red);
-            Logger.Log("++++++++++++++++++++++++++++++++++++++");
-            Logger.Log($"[{Name}] has been loaded! ");
-            Logger.Log("++++++++++++++++++++++++++++++++++++++");
+            Logger.LogWarning("++++++++++++++++++++++++++++++++++++++");
+            Logger.LogWarning($"[{Name}] has been loaded! ");
+            Logger.LogWarning("Dev: MQS#7816");
+            Logger.LogWarning("Join this Discord for Support: https://discord.gg/Ssbpd9cvgp");
+            Logger.LogWarning("++++++++++++++++++++++++++++++++++++++");
 
         }
 
         protected override void Unload()
         {
-            Logger.Log("++++++++++++++++++++++++++++++++++++++");
-            Logger.Log($"[{Name}] has been unloaded! ");
-            Logger.Log("++++++++++++++++++++++++++++++++++++++");
+            Logger.LogWarning("++++++++++++++++++++++++++++++++++++++");
+            Logger.LogWarning($"[{Name}] has been unloaded! ");
+            Logger.LogWarning("++++++++++++++++++++++++++++++++++++++");
 
         }
 

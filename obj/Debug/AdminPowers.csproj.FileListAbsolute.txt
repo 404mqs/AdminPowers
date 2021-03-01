@@ -21,7 +21,6 @@ C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\Rocket.Core.dll
 C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\Rocket.Unturned.dll
 C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\UnityEngine.CoreModule.dll
 C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\bin\Debug\UnityEngine.dll
-C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.csprojAssemblyReference.cache
 C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.csproj.CoreCompileInputs.cache
 C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.csproj.CopyComplete
 C:\Users\Marcos Mont\Desktop\GIT\AdminPowers\obj\Debug\AdminPowers.dll
